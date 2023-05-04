@@ -1,0 +1,201 @@
+<!-- Primer programa - Iniciando con html-->
+<!-- alt + shift + a    comenta lo que se sombrea -->
+<!DOCTYPE html>
+<html lang="en"> <!--idioma-->
+
+<head><!--informacion para el navegador-->
+    <meta charset="UTF-8"> <!--metadatos - caracteres permitidos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--metadatos - compatibilidad con IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--metadatos - para que se visualice en varios dispositivos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="file:///C:/fullstackJS/primerProyecto/css/style.css">
+    <title>Tineo</title>
+</head>
+
+<body class="mb-2 bg-black text-white"> <!--todo lo que se muestra-->
+    <header> <!--Cabecera-->
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="file:///C:/fullstackJS/primerProyecto/index.html">
+                    <img src="file:///C:/fullstackJS/primerProyecto/assets/icons/braces.svg" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    FTG
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="file:///C:/fullstackJS/primerProyecto/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/fullstackJS/primerProyecto/html/table.html">Datos en
+                                una Tabla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="file:///C:/fullstackJS/primerProyecto/html/form.html">Formulario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="file:///C:/fullstackJS/primerProyecto/html/cv.html">
+                                <img src="file:///C:/fullstackJS/primerProyecto/assets/icons/cv.svg" alt="Logo" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/FannyNathaniella001" target="_blank">
+                                <img src="file:///C:/fullstackJS/primerProyecto/assets/icons/github.svg" alt="Logo" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="nav-link" href="#down" name="up" style="margin-left: 55%;">
+                        <img src="file:///C:/fullstackJS/primerProyecto/assets/icons/down-white.svg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+
+                </div>
+        </nav>
+        <!--Carrousel-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="file:///C:/fullstackJS/primerProyecto/assets/img/img-1.jpg" class="d-block w-100 h-75" alt="..">
+                </div>
+                <div class="carousel-item">
+                    <img src="file:///C:/fullstackJS/primerProyecto/assets/img/img-2.jpg" class="d-block w-100 h-75" alt="..">
+                </div>
+                <div class="carousel-item">
+                    <img src="file:///C:/fullstackJS/primerProyecto/assets/img/img-3.jpg" class="d-block w-100 h-75" alt="..">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <br>
+        <h1 class="texto-centrado">Trabajando con HTML5</h1>
+        <h2 class="texto-centrado">Formulario</h2>
+    </header>
+
+
+    <section class="container align-content-center">
+        <form action="dataForm.html">
+            <div class="row-cols-2">
+                <div class="col-auto">
+                <hr>
+                    <label for="inputName">Nombre</label> 
+                    <input type="text"  id="inputName" aria-labelledby="Nombre completo">      
+                <br>
+                <br>
+                    <label for="inputApellido" >Apellido</label>
+                    <input type="text" id="inputApellido" aria-labelledby="Apellidos (Paterno y Materno)">
+                <br>
+                <br>
+                <label for="inputDireccion">Dirección</label>
+                <input type="text" id="inputDireccion" aria-labelledby="Dirección">
+                <br><br>
+                <label for="inputRut">Rut</label>
+                <input type="text" id="inputRut" aria-labelledby="Rut + digito identificador">
+                <br>
+                <br>
+                <label for="inputBrithday">Fecha de Cumpleaños</label>
+                <input type="date" id="inputBrithday" aria-labelledby="Cumpleaños">
+                <br>
+                <hr>
+                <br>
+                    <label for="inputUserName" >Pseudonimo</label>
+                    <input type="text" id="inputUserName" aria-labelledby="Nombre de usuario">
+                <br>
+                <br>
+                    <label for="inputPassword" >Password</label>
+                    <input type="password"id="inputPassword" aria-labelledby="passwordHelpInline">
+                <br>
+                <hr>
+                <br>
+                    <label for="inputFechaCita">Fecha de la cita médica</label>
+                    <input type="date" id="inputFechaCita" aria-labelledby="Día de la cita">
+                <br>
+                <br>
+                <label for="inputEspecialidad">Especialidad</label>
+                <select name="select">
+                    <option value="medicinaInterna">Medicina Interna</option>
+                    <option value="ginecologia">Ginecología</option>
+                    <option value="traumatologia">Traumatología</option>
+                </select>
+                
+                <br>
+                <br>
+                <label for="inputHoraCita">Hora de la cita</label>
+                <input type="time" id="inputHoraCita" aria-labelledby="Hora de la cita">
+                <br>
+                <br>
+                <label for="inputEmail">Correo</label>
+                <input type="email" id="inputEmail" aria-labelledby="Correo electrónico">
+                <br>
+                <br>
+                   <input type="file" id="formFile">
+                    <br>
+                    <br>
+                    <input type="submit" id="btnSubmit" value=" Submit ">
+                </div>
+
+            </div>
+            
+
+
+        </form>
+        
+              
+    <br>
+    <a class="nav-link" href="#up" name="down" style="margin-left: 65%;">
+        <img src="file:///C:/fullstackJS/primerProyecto/assets/icons/up-white.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+  
+    
+    <aside>
+        <a href="file:///C:/fullstackJS/primerProyecto/index.html">HOME</a>
+        <hr>
+        <p>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Date
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body bg-black">
+                <p id="demo"></p>
+            </div>
+        </div>
+    </aside>
+    
+    <footer class="texto-centrado">
+        <h5>Copyright | 2023</h5>
+    </footer>
+    </section>
+
+
+
+
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="file:///C:/fullstackJS/primerProyecto/js/script.js"></script>
+</body>
+
+</html>
