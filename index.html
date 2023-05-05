@@ -1,5 +1,3 @@
-<!-- Primer programa - Iniciando con html-->
-<!-- alt + shift + a    comenta lo que se sombrea -->
 <!DOCTYPE html>
 <html lang="en"> <!--idioma-->
 <head><!--informacion para el navegador-->
@@ -10,95 +8,86 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="file:///C:/fullstackJS/tienda_online/assets/css/style.css">
     
-    <title>API's </title>
+    <title>Tienda</title>
 </head>
 <body class="mb-2"> <!--todo lo que se muestra-->
         <header> <!--Cabecera-->
+    <div>
         <!--Barra de navegación-->
-        <div class="img-fondo">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="light">
-                   <div class="container-fluid img-fondo" >
-                    <a class="navbar-brand" href="file:///C:/fullstackJS/tienda_online/index.html">
-                        
-                        <img src="file:///C:/fullstackJS/tienda_online/assets/icons/braces.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                    API REST
-                    </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="light">
+            <div class="container-fluid img-fondo" >
+                <a class="navbar-brand" href="file:///C:/fullstackJS/tienda_online/index.html">
+                    <img src="file:///C:/fullstackJS/tienda_online/assets/icons/shop.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Tienda Online
+                </a>
                     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="file:///C:/fullstackJS/tienda_online/index.html">Tienda</a>
+                            <a class="nav-link active" aria-current="page" href="file:///C:/fullstackJS/tienda_online/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="file:///C:/fullstackJS/consumo_apiRest/html/api_digimon.html">DIGIMON</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="file:///C:/fullstackJS/consumo_apiRest/html/api_pokemon.html">POKEMON</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="file:///C:/fullstackJS/consumo_apiRest/assets/icons/cv.svg">
-                                <img src="file:///C:/fullstackJS/consumo_apiRest/assets/icons/cv.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                            </a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/FannyNathaniella001" target="_blank">
-                                <img src="assets/icons/github.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                            </a>
-                        </li>
+                            <a class="nav-link active" aria-current="page" href="file:///C:/fullstackJS/tienda_online/assets/html/carrito.html">Carrito de Compras</a>
+                        </li>    
                     </ul>
-                    <a class="nav-link" href="#arriba" style="margin-left: 55%;" name="abajo">
-                        <img src="assets/icons/down-white.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="nav-link" href="#arriba" style="margin-left: 35%;" name="abajo">
+                        <img src="file:///C:/fullstackJS/tienda_online/assets/icons/down-black.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     </a>
                     
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
               
     </header>
     
+
+   <main id="contenidoPrincipal">
+     <!--CARDS-->
      
-    
+        
+   </main>
    
 
-             
-    <footer class="footerAlin" >
-        
-    <p>
-        <a href="file:///C:/fullstackJS/consumo_apiRest/index.html">
-            <img src="assets/icons/home.svg" alt="Logo" width="30" height="24">
-        </a>
-        
-        <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-             aria-controls="collapseExample">
-            <img src="file:///C:/fullstackJS/consumo_apiRest/assets/icons/calendar.svg" alt="Logo" width="30" height="24">
-        </a>
-        
-    </p>
-
-    
-       <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <p style="color:rgb(77, 29, 123);" id="demo"></p>
+            
+    <footer class="container">
+      <div class="row-cols-auto">
+            <p>
+                <a href="file:///C:/fullstackJS/tienda_online/index.html">
+                    <img src="file:///C:/fullstackJS/tienda_online/assets/icons/home.svg" alt="" width="30" height="24">
+                </a>
+                
+                <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <img src="file:///C:/fullstackJS/tienda_online/assets/icons/calendar.svg" alt="" width="30" height="24">
+                </a>
+            </p>
+            
+            
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p style="color:rgb(77, 29, 123);" id="demo"></p>
+                </div>
             </div>
+            <hr>
+            <h5 style="text-align:center;color:rgb(77, 29, 123);">Copyright | 2023
+            
+            <a href="#abajo" name="arriba" style="margin-left: 95%;">
+                <img src="file:///C:/fullstackJS/tienda_online/assets/icons/up-black.svg" alt="Logo" width="30" height="24">
+            </a>
+            </h5>
+            <hr>
         </div>
-        <hr>
-        <h5 style="color:rgb(77, 29, 123);">Copyright | 2023</h5>
-        <!-- -->
-        <a href="#abajo" name="arriba" style="margin-left: 100%;">
-            <img src="assets/icons/up-white.svg" alt="Logo" width="30" height="24">
-        </a>
-        <hr>
-    </footer>
    
+    </footer>
+
     </section>
-    </div>
-    
+ 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
